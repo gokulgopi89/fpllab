@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: fpllab
+Version: 0.1.0
+Summary: FPL + Understat projections
+Requires-Dist: requests>=2.31
+Requires-Dist: pandas>=2.0
+Requires-Dist: streamlit>=1.32
+Requires-Dist: pulp>=2.7
+Dynamic: requires-dist
+Dynamic: summary
