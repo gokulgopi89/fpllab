@@ -1,12 +1,9 @@
-# Streamlit app entry point for Render deployment
-import subprocess
+import streamlit as st
 import sys
+import os
 
-try:
-    import streamlit
-    import plotly
-    import pandas
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+# Add current directory to path
+sys.path.insert(0, os.path.dirname(__file__))
 
+# Run the main app
 exec(open("app_v6.py").read())
